@@ -30,7 +30,7 @@ Android 快速开发UI类
         
         
             dependencies {
-                implementation 'com.github.ithomasoft:base:1.0.0'
+                implementation 'com.github.ithomasoft:base:1.1.0'
             } 
         
             
@@ -38,6 +38,7 @@ Android 快速开发UI类
 
 ## 更新日志
 
+ - 1.1.0：新增mvp基类，优化databinding目录
  - 1.0.0：初始版本，包含mvp架构，组件化，databinding
 
 ## 关于作者
