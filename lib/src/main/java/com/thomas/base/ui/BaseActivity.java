@@ -12,8 +12,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
 
 import com.thomas.core.AdaptScreenUtils;
 import com.thomas.core.BarUtils;

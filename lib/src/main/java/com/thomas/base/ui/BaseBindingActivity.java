@@ -1,9 +1,7 @@
-package com.thomas.base.databinding;
+package com.thomas.base.ui;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-
-import com.thomas.base.ui.BaseActivity;
 
 /**
  * @author Thomas
@@ -12,7 +10,7 @@ import com.thomas.base.ui.BaseActivity;
  * @updatelog
  * @since 1.0.0
  */
-public abstract class BaseDBActivity<DB extends ViewDataBinding> extends BaseActivity {
+public abstract class BaseBindingActivity<DB extends ViewDataBinding> extends BaseActivity {
     protected DB dataBinding;
 
     @Override

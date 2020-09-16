@@ -1,0 +1,32 @@
+package com.thomas.base.ui;
+
+import com.thomas.base.mvp.BaseMvpPresenter;
+import com.thomas.base.mvp.IBaseMvpView;
+import com.thomas.base.ui.BaseActivity;
+
+public abstract class BaseMvpActivity<P extends BaseMvpPresenter> extends BaseActivity
+        implements IBaseMvpView {
+    protected P presenter;
+
+    @Override
+    public void setContentView() {
+        super.setContentView();
+        //创建present
+        presenter = createPresenter();
+        if (presenter != null) {
+            presenter.attachView(this);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //解除绑定，避免内存泄露
+        if (presenter != null) {
+            presenter.detachView();
+            presenter = null;
+        }
+    }
+
+    protected abstract P createPresenter();
+}
