@@ -87,14 +87,6 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
 
 
     @Override
-    public void onDestroyView() {
-        if (mContentView != null) {
-            ((ViewGroup) mContentView.getParent()).removeView(mContentView);
-        }
-        super.onDestroyView();
-    }
-
-    @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putBoolean(STATE_SAVE_IS_HIDDEN, isHidden());

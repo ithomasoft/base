@@ -113,9 +113,6 @@ public abstract class LazyFragment extends Fragment implements IBaseView {
 
     @Override
     public void onDestroyView() {
-        if (mContentView != null) {
-            ((ViewGroup) mContentView.getParent()).removeView(mContentView);
-        }
         super.onDestroyView();
         destroyViewAndThing();
     }
