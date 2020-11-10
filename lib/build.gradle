@@ -35,6 +35,5 @@ android {
 
 dependencies {
     compileOnly 'androidx.appcompat:appcompat:1.2.0'
-    api 'com.bytedance.boost_multidex:boost_multidex:1.0.1'
-    compileOnly 'com.github.ithomasoft:core:1.0.1'
+    compileOnly 'com.github.ithomasoft:core:1.0.2'
 }
