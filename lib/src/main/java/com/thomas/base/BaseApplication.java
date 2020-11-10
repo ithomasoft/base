@@ -1,18 +1,10 @@
 package com.thomas.base;
 
 import android.app.Application;
-import android.content.Context;
 
-import com.bytedance.boost_multidex.BoostMultiDex;
 import com.thomas.core.ProcessUtils;
 
 public abstract class BaseApplication extends Application {
-
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        BoostMultiDex.install(base);
-    }
 
     @Override
     public void onCreate() {

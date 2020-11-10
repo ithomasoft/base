@@ -81,12 +81,12 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
 
 
     public void applyThomasClickListener(View... views) {
-        ClickUtils.applyGlobalDebouncing(views, mClickListener);
+        ClickUtils.applySingleDebouncing(views, mClickListener);
 
     }
 
     public void applyThomasClickScaleListener(View... views) {
-        ClickUtils.applyGlobalDebouncing(views, mClickListener);
+        ClickUtils.applySingleDebouncing(views, mClickListener);
         ClickUtils.applyPressedViewScale(views);
     }
 
