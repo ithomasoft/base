@@ -94,12 +94,12 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
 
 
     public void applyThomasClickListener(View... views) {
-        ClickUtils.applyGlobalDebouncing(views, mClickListener);
+        ClickUtils.applySingleDebouncing(views, mClickListener);
 
     }
 
     public void applyThomasClickScaleListener(View... views) {
-        ClickUtils.applyGlobalDebouncing(views, mClickListener);
+        ClickUtils.applySingleDebouncing(views, mClickListener);
         ClickUtils.applyPressedViewScale(views);
     }
 
