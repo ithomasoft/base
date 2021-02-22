@@ -52,8 +52,10 @@ public abstract class LazyFragment extends Fragment implements IBaseView {
             } else {
                 ft.show(this);
             }
-            ft.commitAllowingStateLoss();
+            ft.commitNowAllowingStateLoss();
         }
+        Bundle bundle = getArguments();
+        initData(bundle);
     }
 
     @Nullable
@@ -76,8 +78,7 @@ public abstract class LazyFragment extends Fragment implements IBaseView {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Bundle bundle = getArguments();
-        initData(bundle);
+
     }
 
     @Override
