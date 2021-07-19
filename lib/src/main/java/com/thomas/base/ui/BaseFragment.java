@@ -49,7 +49,7 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
             } else {
                 ft.show(this);
             }
-            ft.commitNowAllowingStateLoss();
+            ft.commitAllowingStateLoss();
         }
         Bundle bundle = getArguments();
         initData(bundle);
