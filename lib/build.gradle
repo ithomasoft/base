@@ -34,6 +34,6 @@ android {
 }
 
 dependencies {
-    compileOnly 'androidx.appcompat:appcompat:1.2.0'
+    compileOnly 'androidx.appcompat:appcompat:1.3.0'
     compileOnly 'com.github.ithomasoft:core:1.1.0'
 }
